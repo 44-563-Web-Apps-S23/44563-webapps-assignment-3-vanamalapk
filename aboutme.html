@@ -46,7 +46,36 @@
                 <td>15 days</td>
 
             </tr>
-            
+
+           
         </table>
+        <hr>
+        <h4>code sniplet</h4>
+        <blockquote cite="https://stackoverflow.com/questions/75335066/element-inside-moves-out-of-the-box-when-window-size-minimized"> Element inside moves out of the box when window size minimized</blockquote>
+            
+
+        <a href="https://stackoverflow.com/questions/75335066/element-inside-moves-out-of-the-box-when-window-size-minimized">Link to stackoverflow</a>
+        <pre>
+            import * as React from "react";
+            import { render } from "react-dom";
+            import "./styles.css";
+            
+            const App = () => {
+              return (
+                <div className="info-box-container">
+                  <div className="info-box-section">
+                    <span className={"info-box-icon"}>icon</span>
+                    <div className={"info-box-text"}>
+                      <span>Dummy Text Dummy Text Dummy Text Dummy Text</span>
+                    </div>
+                    <button className={"info-box-action-button"}>Test Configuration</button>
+                  </div>
+                </div>
+              );
+            };
+            
+            render(<App />, document.getElementById("root"));
+        </pre>
+
     </body>
 </html>
